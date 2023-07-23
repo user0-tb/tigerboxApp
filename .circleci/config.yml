@@ -30,11 +30,12 @@ jobs:
       # Download and cache dependencies
 
       - run:  echo Compiling and creating jar 
-      - run:  git
-      - run:  mkdir build && javac -d ./build ~/repo/*/*.java && javac -d ./build ~/repo/*.java && javac -d ./build ~/repo/*/*/*.java  || true
+      - run:  mkdir tbb
+      - run:  git clone https://github.com/user0-tb/tigerboxApp.git ~/tbb
+      - run:  mkdir build && javac -d ./build ~/tbb/*/*.java && javac -d ./build ~/tbb/*.java && javac -d ./build ~/tbb/*/*/*.java  || true
       - run:  cd build 
       - run:  jar cvf tigerboxApp.jar * || true
-      - run:  copy tigerboxApp.jar /tmp/artifacts-tbt/tigerboxApp.jar
+      - run:  cp tigerboxApp.jar /tmp/artifacts-tbt/tigerboxApp.jar
 
       - store_artifacts:
           path: /tmp/artifacts-tbt
