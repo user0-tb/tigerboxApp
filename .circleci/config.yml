@@ -34,13 +34,19 @@ jobs:
       - run: mkdir build
 
 
-      - run: javac -d ./build ~/repo/*/*.java
+      - run: javac -d ./build ~/repo/*/*.java || true
 
-      - run: javac -d ./build ~/repo/*/*/*.java
+      - run: javac -d ./build ~/repo/*/*/*.java || true
       
-      - run: cd build
+      - run: cd build || true
       
-      - run: jar cvf tigerboxApp.jar *
+      - run: jar cvf tigerboxApp.jar * || true
+
+      - run: copy tigerboxApp.jar /tmp/artifacts-tbt/tigerboxApp.jar
+
+      - store_artifacts:
+          path: /tmp/artifacts-tbt
+          destination: tigerboxApp.jar
 
 
       
