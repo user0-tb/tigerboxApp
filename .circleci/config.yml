@@ -29,9 +29,16 @@ jobs:
       - checkout
 
       # Download and cache dependencies
-      
 
-      - run: javac -d ./build */*.java
+
+      - run: mkdir build
+
+
+      - run: javac -d ./build ~/repo/*/*.java
+
+      - run: javac -d ./build ~/repo/*/*/*.java
+      
+      - run: cd build
       
       - run: jar cvf tigerboxApp.jar *
 
