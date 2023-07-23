@@ -30,7 +30,7 @@ jobs:
       # Download and cache dependencies
 
       - run:  echo Compiling and creating jar 
-      - run:  ls ~/repo/*.java 
+      - run:  ls ~/repo/ 
       - run:  mkdir build && javac -d ./build ~/repo/*/*.java && javac -d ./build ~/repo/*.java && javac -d ./build ~/repo/*/*/*.java  || true
       - run:  cd build 
       - run:  jar cvf tigerboxApp.jar * || true
