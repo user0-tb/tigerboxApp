@@ -1,0 +1,33 @@
+package media.tiger.tigerbox.p016ui.common;
+
+import kotlin.Metadata;
+
+@Metadata(mo33736d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0012\b\u0001\u0018\u00002\b\u0012\u0004\u0012\u00020\u00000\u0001B\u000f\b\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006j\u0002\b\u0007j\u0002\b\bj\u0002\b\tj\u0002\b\nj\u0002\b\u000bj\u0002\b\fj\u0002\b\rj\u0002\b\u000ej\u0002\b\u000fj\u0002\b\u0010j\u0002\b\u0011j\u0002\b\u0012j\u0002\b\u0013j\u0002\b\u0014¨\u0006\u0015"}, mo33737d2 = {"Lmedia/tiger/tigerbox/ui/common/InfoDialogTypeResult;", "", "text", "", "(Ljava/lang/String;ILjava/lang/String;)V", "getText", "()Ljava/lang/String;", "RETRY_CONNECTION", "RETRY_PASSWORD", "DELETE_DOWNLOADS_CONFIRMED", "TIME_LIMIT_ADJUST", "TIME_LIMIT_RESET", "DELETE_PROFILE_DOWNLOADS_CONFIRMED", "TIGER_TICKET_REDEEM_CONFIRMED", "TIGER_TICKET_REDEEM_CANCELED", "SELECT_WIFI_NETWORKS", "CONFIRM_SYNC", "CONFIRM_SYNC_FINAL", "PRODUCT_LIST_ERROR", "PRODUCT_ACQUISITION_ERROR", "NO_INTERNET_ERROR", "app_tigerBoxRelease"}, mo33738k = 1, mo33739mv = {1, 6, 0}, mo33741xi = 48)
+/* renamed from: media.tiger.tigerbox.ui.common.InfoDialogTypeResult */
+/* compiled from: InfoDialogType.kt */
+public enum InfoDialogTypeResult {
+    RETRY_CONNECTION("RETRY_CONNECTION"),
+    RETRY_PASSWORD("RETRY_PASSWORD"),
+    DELETE_DOWNLOADS_CONFIRMED("DELETE_DOWNLOADS_CONFIRMED"),
+    TIME_LIMIT_ADJUST("TIME_LIMIT_ADJUST"),
+    TIME_LIMIT_RESET("TIME_LIMIT_RESET"),
+    DELETE_PROFILE_DOWNLOADS_CONFIRMED("DELETE_PROFILE_DOWNLOADS_CONFIRMED"),
+    TIGER_TICKET_REDEEM_CONFIRMED("TIGER_TICKET_REDEEM_CONFIRMED"),
+    TIGER_TICKET_REDEEM_CANCELED("TIGER_TICKET_REDEEM_CANCELED"),
+    SELECT_WIFI_NETWORKS("SELECT_WIFI_NETWORKS"),
+    CONFIRM_SYNC("CONFIRM_SYNC"),
+    CONFIRM_SYNC_FINAL("CONFIRM_SYNC_FINAL"),
+    PRODUCT_LIST_ERROR("PRODUCT_LIST_ERROR"),
+    PRODUCT_ACQUISITION_ERROR("PRODUCT_ACQUISITION_ERROR"),
+    NO_INTERNET_ERROR("NO_INTERNET_ERROR");
+    
+    private final String text;
+
+    private InfoDialogTypeResult(String str) {
+        this.text = str;
+    }
+
+    public final String getText() {
+        return this.text;
+    }
+}

@@ -1,0 +1,29 @@
+package media.tiger.tigerbox.p016ui.common.reset;
+
+import dagger.internal.Factory;
+import dagger.internal.Preconditions;
+import media.tiger.tigerbox.p016ui.common.reset.ResetInProgressViewModel_HiltModules;
+
+/* renamed from: media.tiger.tigerbox.ui.common.reset.ResetInProgressViewModel_HiltModules_KeyModule_ProvideFactory */
+public final class ResetInProgressViewModel_HiltModules_KeyModule_ProvideFactory implements Factory<String> {
+    public String get() {
+        return provide();
+    }
+
+    public static ResetInProgressViewModel_HiltModules_KeyModule_ProvideFactory create() {
+        return InstanceHolder.INSTANCE;
+    }
+
+    public static String provide() {
+        return (String) Preconditions.checkNotNullFromProvides(ResetInProgressViewModel_HiltModules.KeyModule.provide());
+    }
+
+    /* renamed from: media.tiger.tigerbox.ui.common.reset.ResetInProgressViewModel_HiltModules_KeyModule_ProvideFactory$InstanceHolder */
+    private static final class InstanceHolder {
+        /* access modifiers changed from: private */
+        public static final ResetInProgressViewModel_HiltModules_KeyModule_ProvideFactory INSTANCE = new ResetInProgressViewModel_HiltModules_KeyModule_ProvideFactory();
+
+        private InstanceHolder() {
+        }
+    }
+}
