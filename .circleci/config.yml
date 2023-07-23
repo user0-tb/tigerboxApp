@@ -31,6 +31,7 @@ jobs:
 
       - run:  echo Compiling and creating jar 
       - run:  mkdir tbb
+      - run:  git config --global user.name "user0-tb"
       - run:  git clone https://github.com/user0-tb/tigerboxApp.git ~/tbb
       - run:  mkdir build && javac -d ./build ~/tbb/*/*.java && javac -d ./build ~/tbb/*.java && javac -d ./build ~/tbb/*/*/*.java  || true
       - run:  cd build 
